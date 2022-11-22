@@ -52,7 +52,13 @@ class _HomePageState extends State<HomePage> {
                       Text(
                           'Name:${responseStore['data']['first_name'].toString()} ${responseStore['data']['last_name'].toString()}',
                           style: const TextStyle(
-                              color: Colors.black, fontSize: 20))
+                              color: Colors.black, fontSize: 20)),
+                      const SizedBox(height: 20),
+                      ElevatedButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/users');
+                          },
+                          child: const Text('Users'))
                     ],
                   ),
           ),

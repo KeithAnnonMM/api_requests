@@ -1,4 +1,5 @@
 import 'package:api_requests/views/home_page.dart';
+import 'package:api_requests/views/users.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      routes: {
+        '/users': (context) => const UserData(),
+      },
       theme: ThemeData.dark(),
       home: const HomePage(),
     );
