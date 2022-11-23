@@ -15,7 +15,6 @@ class MyApp extends StatelessWidget {
       routes: {
         '/users': (context) => const UserData(),
       },
-      theme: ThemeData.dark(),
       home: const HomePage(),
     );
   }
